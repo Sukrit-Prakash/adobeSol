@@ -1,6 +1,7 @@
 from extractor import MLHeadingExtractor
 
-pdf_path = "input/sample_input.pdf"
+# pdf_path = "input/sample_input.pdf"
+pdf_path = "input/research-paper.pdf"
 extractor = MLHeadingExtractor(pdf_path)
 result = extractor.extract()
 

@@ -70,14 +70,21 @@ class MLHeadingExtractor:
                         spacing = y0 - prev_y if prev_y is not None else 0
                         prev_y = y0
 
-                        try:
-                            font_encoded = self.font_encoder.transform([font_name])[0]
-                        except:
-                            continue  # skip unknown font
+                        # try:
+                        # font_encoded = self.font_encoder.transform([font_name])[0]
+                        font_encoded = self.font_encoder.transform([[font_name]])[0][0] #for ordinal encoding
+                        #     # print(f"Processing font: {font_name} → Encoded: {font_encoded}")
+                        #     # if font_name not in self.font_encoder.classes_:
+                        #     #     print("Unknown font:", font_name)
+                        #     #     continue  # skip unknown font
+                        # except:
+                        #     continue  # skip unknown font
 
                         features = [[font_size, font_encoded, flags, text_length, spacing]]
                         pred_label = self.model.predict(features)[0]
                         label = self.label_encoder.inverse_transform([pred_label])[0]
+                        probs = self.model.predict_proba(features)[0]
+                        print(f"{label}: {text} → probs={dict(zip(self.label_encoder.classes_, probs.round(2)))}")
 
                         if label != "BODY":
                             result.append({
@@ -85,7 +92,11 @@ class MLHeadingExtractor:
                                 "text": text,
                                 "page": page_num
                             })
-
+                        #     print(f"Extracted: {label} → {text}")
+                        # print(f"Predicted: {label} → {text}")
+        print(f"Extracted {len(result)} headings from {len(self.doc)} pages.")
+        print("Title:", title)
+        print("Extracted headings:", result)
         return {"title": title, "outline": self._build_hierarchy(result)}
 
     def _get_title(self) -> str:
