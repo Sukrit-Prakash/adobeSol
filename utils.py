@@ -1,10 +1,12 @@
-
+# utils.py
 import statistics
 from collections import Counter
 
 # Determine body font size as the mode of all sizes
 def get_body_font_size(sizes):
     try:
+        print("Calculating body font size from sizes:", sizes)
+        print("Most common font size:", Counter(sizes).most_common(1))
         return Counter(sizes).most_common(1)[0][0]
     except IndexError:
         return statistics.median(sizes)

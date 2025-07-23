@@ -27,7 +27,8 @@ from pathlib import Path
 from extractor import OutlineExtractor # Assuming extractor.py is in the same directory
 
 # Hardcoded paths
-input_file = Path("input/sample2.pdf")
+# input_file = Path("input/sample_input.pdf")
+input_file = Path("input/Dms_revised.pdf")
 output_dir = Path("output")
 output_file = output_dir / (input_file.stem + ".json")
 

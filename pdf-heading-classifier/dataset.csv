@@ -1,0 +1,52 @@
+text,font_size,font_name,flags,text_length,spacing,label
+Discrete Mathematical Structures (NMA 302),19.920000076293945,AptosDisplay,4,42,0,BODY
+UNIT I: Fundamentals of Logic,13.920000076293945,TimesNewRomanPSMT,4,29,47.81987762451172,BODY
+Propositional Logic:,9.59999942779541,TimesNewRomanPS-BoldMT,20,20,25.689605712890625,BODY
+"Propositions, Basic logic operations and truth tables, Tautologies, Contradictions, Algebra of",9.59999942779541,TimesNewRomanPSMT,4,94,0.0,BODY
+"propositions, Logical equivalence: the laws of logic, Logical implication: Rules of inference, Logical analysis of",9.59999942779541,TimesNewRomanPSMT,4,114,12.720001220703125,BODY
+"argument, Some computing application (Normal forms)",9.59999942779541,TimesNewRomanPSMT,4,51,12.960006713867188,BODY
+First Order Logic:,9.59999942779541,TimesNewRomanPS-BoldMT,20,18,12.959991455078125,BODY
+"Predicates & quantifiers, Use of quantifiers, Rules of inference, Validity of arguments, proof",9.59999942779541,TimesNewRomanPSMT,4,94,0.0,BODY
+methods.,9.59999942779541,TimesNewRomanPSMT,4,8,12.720001220703125,BODY
+"UNIT II: Set Theory, Relations and Functions",13.920000076293945,TimesNewRomanPSMT,4,44,28.070388793945312,BODY
+Set Theory:,9.59999942779541,TimesNewRomanPS-BoldMT,20,11,25.689605712890625,BODY
+"Sets & subsets, Venn diagrams, set operations and laws, countable set, Cartesian product, Cardinality,",9.59999942779541,TimesNewRomanPSMT,4,102,0.0,BODY
+Relations:,9.59999942779541,TimesNewRomanPS-BoldMT,20,10,12.959991455078125,BODY
+"Relation, Representation & properties, n-ray relations and applications, Composition of relations,",9.59999942779541,TimesNewRomanPSMT,4,98,0.0,BODY
+Equivalence relation & partitions.,9.59999942779541,TimesNewRomanPSMT,4,34,12.96002197265625,BODY
+Functions:,9.59999942779541,TimesNewRomanPS-BoldMT,20,10,12.720001220703125,BODY
+"Functions and its types, Inverse function, Composition of functions, Special functions.",9.59999942779541,TimesNewRomanPSMT,4,87,0.0,BODY
+Theorem Proving Techniques:,9.59999942779541,TimesNewRomanPS-BoldMT,20,27,12.959991455078125,BODY
+"Mathematical induction, Proof by contradiction, Pigeonhole principle.",9.59999942779541,TimesNewRomanPSMT,4,69,0.0,BODY
+UNIT III: Algebraic Structures and Coding Theory:,13.920000076293945,TimesNewRomanPSMT,4,49,25.67041015625,BODY
+Algebraic Structures:,9.59999942779541,TimesNewRomanPS-BoldMT,20,21,30.24957275390625,BODY
+"Definition, Properties, Semi group, Monoid, Group, properties of groups, Subgroup, Cyclic",9.59999942779541,TimesNewRomanPSMT,4,89,0.0,BODY
+"group, Cosets and Lagrange’s theorem, Homomorphism and isomorphism of groups",9.59999942779541,TimesNewRomanPSMT,4,76,12.96002197265625,BODY
+Coding Theory:,9.59999942779541,TimesNewRomanPS-BoldMT,20,14,12.959991455078125,BODY
+"Elements of coding theory, Hamming matric, Parity-check and generator matrices, Coding and error",9.59999942779541,TimesNewRomanPSMT,4,96,0.0,BODY
+"detection,",9.59999942779541,TimesNewRomanPSMT,4,10,12.720001220703125,BODY
+UNIT IV: Partially Ordered Structures,13.920000076293945,TimesNewRomanPSMT,4,37,25.910400390625,BODY
+Posets:,9.59999942779541,TimesNewRomanPS-BoldMT,20,7,25.689605712890625,BODY
+"Definitions, ordered set, Hasse diagram, isomorphic ordered set, well ordered set, Minimal and Maximal",9.59999942779541,TimesNewRomanPSMT,4,102,0.0,BODY
+"elements, LUB & GLB etc.",9.59999942779541,TimesNewRomanPSMT,4,24,12.720001220703125,BODY
+Boolean Algebras:,9.59999942779541,TimesNewRomanPS-BoldMT,20,17,12.959991455078125,BODY
+"Definitions & Properties, Logic gates and minimization of circuits, Quine-McClusky method.",9.59999942779541,TimesNewRomanPSMT,4,90,0.0,BODY
+UNIT V: Combinatorics and Graph Theory:,13.920000076293945,TimesNewRomanPSMT,4,39,25.670379638671875,BODY
+Combinatorics:,9.59999942779541,TimesNewRomanPS-BoldMT,20,14,25.2095947265625,BODY
+"Discrete numeric functions and properties, Recurrence relations, Solution of recurrence relation, OGF",9.59999942779541,TimesNewRomanPSMT,4,101,0.0,BODY
+& EGF.,9.59999942779541,TimesNewRomanPSMT,4,6,12.72003173828125,BODY
+Graphs:,9.59999942779541,TimesNewRomanPS-BoldMT,20,7,12.96002197265625,BODY
+"Graphs and graph models, terminology, Euler and Hamilton graphs with their applications, trees with properties,",9.59999942779541,TimesNewRomanPSMT,4,111,0.0,BODY
+"MST, planer graphs and applications, criteria of planarity.",9.59999942779541,TimesNewRomanPSMT,4,59,12.9599609375,BODY
+Books Recommended:,13.920000076293945,TimesNewRomanPSMT,4,18,42.950439453125,BODY
+1.,9.59999942779541,TimesNewRomanPS-BoldMT,20,2,15.849609375,BODY
+"Trembley, J.P. & R. Manohar, “Discrete Mathematical Structures with applications to Computer Science”, McGraw",9.59999942779541,TimesNewRomanPSMT,4,109,0.0,BODY
+Hill.,9.59999942779541,TimesNewRomanPSMT,4,5,12.719970703125,BODY
+2.,9.59999942779541,TimesNewRomanPS-BoldMT,20,2,12.719970703125,BODY
+"Kenneth H. Rosen, “Discrete Mathematics and its Applications”, McGraw Hill.",9.59999942779541,TimesNewRomanPSMT,4,75,0.0,BODY
+3.,9.59999942779541,TimesNewRomanPS-BoldMT,20,2,11.0400390625,BODY
+"Ralph, P. Garimaldi, “Discrete& Combinatorial Mathematics” Pearson Publication, Asia.",9.59999942779541,TimesNewRomanPSMT,4,85,0.0,BODY
+4.,9.59999942779541,TimesNewRomanPS-BoldMT,20,2,10.79998779296875,BODY
+"Deo, narsingh, “Graph Theory with applications to Engineering & Computer Science”, PHI.",9.59999942779541,TimesNewRomanPSMT,4,87,0.0,BODY
+5.,9.59999942779541,TimesNewRomanPS-BoldMT,20,2,11.03997802734375,BODY
+"Krishnamurthy, V., “Combinatorics Theory & Application”, East-West Press Pvt. Ltd., New Delhi",9.59999942779541,TimesNewRomanPSMT,4,93,0.0,BODY

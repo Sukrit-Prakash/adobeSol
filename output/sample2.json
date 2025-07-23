@@ -4,92 +4,89 @@
     {
       "level": "H2",
       "text": "SUKRIT PRAKASH SINGH",
-      "page": 1
-    },
-    {
-      "level": "H3",
-      "text": "Full Stack Developer",
-      "page": 1
-    },
-    {
-      "level": "H3",
-      "text": "SUMMARY",
-      "page": 1
-    },
-    {
-      "level": "H3",
-      "text": "EXPERIENCE",
-      "page": 1
-    },
-    {
-      "level": "H3",
-      "text": "Full Stack Web-Development Intern",
-      "page": 1
-    },
-    {
-      "level": "H3",
-      "text": "Backend-Development Intern (Remote)",
-      "page": 1
-    },
-    {
-      "level": "H3",
-      "text": "SKILLS",
-      "page": 1
-    },
-    {
-      "level": "H3",
-      "text": "KEY ACHIEVEMENTS",
-      "page": 1
-    },
-    {
-      "level": "H3",
-      "text": "EDUCATION",
-      "page": 1
-    },
-    {
-      "level": "H3",
-      "text": "Bachelor of Technology in Computer",
-      "page": 1
-    },
-    {
-      "level": "H3",
-      "text": "Science",
-      "page": 1
-    },
-    {
-      "level": "H3",
-      "text": "Intermediate in Science",
-      "page": 1
-    },
-    {
-      "level": "H3",
-      "text": "PROJECTS",
-      "page": 1
-    },
-    {
-      "level": "H3",
-      "text": "Black-Box",
-      "page": 1
-    },
-    {
-      "level": "H3",
-      "text": "The AI - GYM",
-      "page": 1
-    },
-    {
-      "level": "H1",
-      "text": "",
-      "page": 1
-    },
-    {
-      "level": "H3",
-      "text": "G",
-      "page": 1
-    },
-    {
-      "level": "H3",
-      "text": "",
-      "page": 1
+      "page": 1,
+      "children": [
+        {
+          "level": "H3",
+          "text": "Full Stack Developer",
+          "page": 1
+        },
+        {
+          "level": "H3",
+          "text": "SUMMARY",
+          "page": 1
+        },
+        {
+          "level": "H3",
+          "text": "EXPERIENCE",
+          "page": 1
+        },
+        {
+          "level": "H3",
+          "text": "Full Stack Web-Development Intern",
+          "page": 1
+        },
+        {
+          "level": "H3",
+          "text": "Backend-Development Intern (Remote)",
+          "page": 1
+        },
+        {
+          "level": "H3",
+          "text": "SKILLS",
+          "page": 1
+        },
+        {
+          "level": "H3",
+          "text": "KEY ACHIEVEMENTS",
+          "page": 1
+        },
+        {
+          "level": "H3",
+          "text": "EDUCATION",
+          "page": 1
+        },
+        {
+          "level": "H3",
+          "text": "Bachelor of Technology in Computer",
+          "page": 1
+        },
+        {
+          "level": "H3",
+          "text": "Science",
+          "page": 1
+        },
+        {
+          "level": "H3",
+          "text": "Intermediate in Science",
+          "page": 1
+        },
+        {
+          "level": "H3",
+          "text": "PROJECTS",
+          "page": 1
+        },
+        {
+          "level": "H3",
+          "text": "Black-Box",
+          "page": 1
+        },
+        {
+          "level": "H3",
+          "text": "The AI - GYM",
+          "page": 1
+        },
+        {
+          "level": "H3",
+          "text": "G",
+          "page": 1
+        },
+        {
+          "level": "H3",
+          "text": "",
+          "page": 1
+        }
+      ]
     }
   ]
 }
