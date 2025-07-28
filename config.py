@@ -1,6 +1,0 @@
-# TITLE_FONT_SIZE_THRESHOLD = 20
-# HEADING_FONT_RELATIVE_THRESHOLD = {
-#     "H1": 1.0,
-#     "H2": 0.85,
-#     "H3": 0.75
-# }
