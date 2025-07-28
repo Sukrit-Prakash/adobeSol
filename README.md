@@ -1,131 +1,117 @@
-# 📘 PDF Heading Extractor with Machine Learning
+# 📄 Solution 1B – Document-Driven Intelligence for PDF Processing
 
-An intelligent tool that extracts and organizes hierarchical outlines (H1–H3) from PDF files using a combination of heuristics and a trained ML classifier.
-
----
-
-## ✨ Features
-
-- 🔍 Automatically identifies headings (`H1`, `H2`, `H3`) and body text
-- 🧠 Uses `RandomForestClassifier` for font/spacing-based prediction
-- 🧱 Hierarchically builds outlines based on heading levels
-- 📝 Supports both rule-based and model-based extraction
-- 📤 Outputs clean JSON outline for structured use
+Welcome to **Solution 1B** of the Adobe India Hackathon!  
+This solution implements an intelligent document processing pipeline that extracts semantic embeddings from PDFs, enables efficient document clustering & similarity analysis, and answers user queries contextually using local models — all in a lightweight, offline setup under **200MB**.
 
 ---
 
-## 🧠 Architecture Overview
+## 🚀 Features
 
-    +-------------------+
-    |   Input PDF File  |
-    +---------+---------+
-              |
-       PyMuPDF Parsing
-              ↓
-    +--------------------+
-    |  Extracted Spans   |
-    | (Text, Font, Size) |
-    +--------------------+
-              |
-  ┌───────────┴────────────┐
-  ↓                        ↓
-              ↓
-    +--------------------+
-    |  Tagged Text Lines |
-    +--------------------+
-              ↓
-    Outline Builder (Hierarchy via H1/H2/H3)
-              ↓
-    +--------------------+
-    |   JSON Output      |
-    +--------------------+
+- ✅ **Semantic understanding of PDF content** using Sentence-BERT.
+- ✅ **Lightweight local processing** (<200MB; no internet required).
+- ✅ **Optimized document embedding & indexing** with FAISS or cosine similarity.
+- ✅ **Post-query semantic answer generation**.
+- ✅ **Supports batch document analysis**.
+- ✅ **Runs fully offline inside Docker**.
 
 ---
 
-## 🔧 Project Structure
+## 🏗️ Architecture Overview
 
-pdf-heading-classifier/
-├── input/ # Input PDFs
-├── output/ # Extracted JSON outputs
-├── training_pdfs/ # Training PDFs
-├── dataset.csv # Labeled feature dataset
-├── balanced_dataset.csv # Class-balanced dataset
-├── extractor.py # Heuristic/ML extraction logic
-├── feature_extractor.py # Feature + auto-label extraction
-├── train_model.py # Trains classifier + saves .pkl
-├── script.py # Batch PDF → dataset.csv
-├── main.py # Runs extractor on a single PDF
-├── heading_classifier.pkl # Trained ML model
-├── font_encoder.pkl # Encoded font name model
-├── label_encoder.pkl # Encoded H1/H2/H3/BODY labels
-└── README.md
+```plaintext
+                        +----------------------+
+                        |   Input PDFs         |
+                        +----------------------+
+                                  |
+                                  v
+                        +----------------------+
+                        |   PDF Text Extractor |
+                        |    (PyMuPDF)         |
+                        +----------------------+
+                                  |
+                                  v
+                        +----------------------+
+                        |  Sentence Chunking   |
+                        |   (via NLTK)         |
+                        +----------------------+
+                                  |
+                                  v
+                        +----------------------+
+                        | Embedding Generator  |
+                        | (Sentence-BERT)      |
+                        +----------------------+
+                                  |
+                                  v
+                        +----------------------+
+                        | Similarity Scorer    |
+                        | (FAISS / Cosine)     |
+                        +----------------------+
+                                  |
+                                  v
+                    +------------------------------+
+                    |  Relevant Chunk Retrieval     |
+                    +------------------------------+
+                                  |
+                                  v
+                      +------------------------+
+                      |   Answer Generator     |
+                      |   (Local Template /    |
+                      |     Transformer)       |
+                      +------------------------+
 
----
+Setup Instructions
+🔧 1. Clone the Repository
+git clone https:/Sukrit-Prakash/adobeSol/github.com/.git
+cd adobe-solution-1b
+🐋 2. Build the Docker Image
+docker build -t doc_processor .
+▶️ 3. Run the Processor
+Place your PDFs in the data/ folder and modify input.json as needed.
 
-## 🏗️ Model Features
+docker run --rm -v "$(pwd):/app" doc_processor python app/main.py --config input.json
 
-The classifier is trained on:
+| 🛠️ Tool                     | 🔍 Purpose                                     |
+| ---------------------------- | ---------------------------------------------- |
+| 📄 **PyMuPDF**               | High-performance PDF text extraction           |
+| 🧠 **NLTK**                  | Sentence tokenization                          |
+| 🔗 **sentence-transformers** | Embedding generation (MiniLM)                  |
+| 📊 **scikit-learn**          | Cosine similarity computation                  |
+| ⚡ **FAISS** *(optional)*     | Fast dense vector indexing (retrieval)         |
+| 🐳 **Docker**                | Containerized execution & dependency isolation |
 
-| Feature        | Description                          |
-|----------------|--------------------------------------|
-| `font_size`     | Absolute font size of the span       |
-| `font_name`     | Encoded font family                  |
-| `flags`         | Bold/italic flags from PyMuPDF       |
-| `text_length`   | Number of characters in text span    |
-| `spacing`       | Vertical spacing from previous line  |
 
----
+Solution-1B/
+│
+├── app/
+│   ├── main.py              # Entry point
+│   ├── pdf_processor.py     # PDF reading & text cleaning
+│   ├── embedder.py          # Sentence-BERT wrapper
+│   ├── similarity.py        # Similarity engine
+│   ├── answer_generator.py  # Query response logic
+│
+├── data/                    # PDF files go here
+├── input.json               # User query config
+├── requirements.txt         # Python dependencies
+├── Dockerfile               # Docker setup
+└── README.md                # 📘 You're reading it!
 
-## 🧪 Getting Started
 
-### 1. 🧹 Generate Training Dataset
-
-```bash
-python script.py
-2. ⚖️ Balance the Dataset
-bash
-Copy
-Edit
-python balance_dataset.py
-Produces balanced_dataset.csv.
-
-3. 🤖 Train the Classifier
-bash
-Copy
-Edit
-python train_model.py
-Trains and saves:
-
-heading_classifier.pkl
-
-font_encoder.pkl
-
-label_encoder.pkl
-
-4. 🏁 Run Extraction on New PDF
-bash
-Copy
-Edit
-python main.py
-Outputs outline to output/filename.json.
-
-Sample Output (JSON)
-
+Example input.json
 {
-  "title": "Understanding AI",
-  "outline": [
-    {
-      "level": "H1",
-      "text": "1. Introduction",
-      "page": 1,
-      "children": [
-        {
-          "level": "H2",
-          "text": "1.1 Background",
-          "page": 1
-        }
-      ]
-    }
-  ]
+  "query": "How do I export PDFs in Acrobat?",
+  "input_dir": "data",
+  "use_faiss": false,
+  "top_k": 3
 }
-```
+
+
+Sample Output (Terminal)
+Query: How do I export PDFs in Acrobat?
+
+Relevant Passages:
+1. "To export a PDF, open it in Acrobat and go to File > Export To > Microsoft Word..."
+2. "You can also convert PDFs to Excel or PowerPoint using the Export tool."
+3. "The Export PDF tool allows selection of file types like DOCX, XLSX, etc."
+
+Generated Answer:
+"To export PDFs in Acrobat, use the 'Export PDF' tool under the File menu. You can choose formats such as Word, Excel, or PowerPoint based on your needs."
