@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "input_documents": [
+      "Learn Acrobat - Create and Convert_1.pdf",
+      "Learn Acrobat - Create and Convert_2.pdf",
+      "Learn Acrobat - Edit_1.pdf",
+      "Learn Acrobat - Edit_2.pdf",
+      "Learn Acrobat - Export_1.pdf",
+      "Learn Acrobat - Export_2.pdf",
+      "Learn Acrobat - Fill and Sign.pdf",
+      "Learn Acrobat - Generative AI_1.pdf",
+      "Learn Acrobat - Generative AI_2.pdf",
+      "Learn Acrobat - Request e-signatures_1.pdf",
+      "Learn Acrobat - Request e-signatures_2.pdf",
+      "Learn Acrobat - Share_1.pdf",
+      "Learn Acrobat - Share_2.pdf",
+      "Test Your Acrobat Exporting Skills.pdf",
+      "The Ultimate PDF Sharing Checklist.pdf"
+    ],
+    "persona": "HR professional",
+    "job_to_be_done": "Create and manage fillable forms for onboarding and compliance.",
+    "processing_timestamp": "2025-07-28T15:11:08.785975"
+  },
+  "extracted_sections": [
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "page_number": 2,
+      "section_title": "Alternatively, you can select All tools > Fill & Sign. It displays the Fill & Si",
+      "importance_rank": 1,
+      "confidence": "Low"
+    },
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "page_number": 2,
+      "section_title": "You can manually add text and other symbols anywhere on the form using the Fill ",
+      "importance_rank": 2,
+      "confidence": "Low"
+    },
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "page_number": 12,
+      "section_title": "Interactive form To create an interactive form, use the Prepare Forms tool. See ",
+      "importance_rank": 3,
+      "confidence": "Low"
+    },
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "page_number": 2,
+      "section_title": "Acrobat also allows you to send your completed forms to others and securely save",
+      "importance_rank": 4,
+      "confidence": "Low"
+    },
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "page_number": 2,
+      "section_title": "It could be a paper form or PDF that hasn’t been optimized for form filling. The",
+      "importance_rank": 5,
+      "confidence": "Low"
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "highlighted_text": "Alternatively, you can select All tools > Fill & Sign. It displays the Fill & Sign tools in the left pane. You can now fill in the form fields and sign the form using the sign tools described in the following topics.",
+      "page_number": 2,
+      "similarity_score": 0.5988
+    },
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "highlighted_text": "You can manually add text and other symbols anywhere on the form using the Fill & Sign tool if required. You can complete the forms by entering information and adding your signatures. Acrobat also allows you to send your completed forms to others and securely save them in Adobe cloud storage.",
+      "page_number": 2,
+      "similarity_score": 0.5905
+    },
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "highlighted_text": "Interactive form To create an interactive form, use the Prepare Forms tool. See Create a form from an existing document. Flat form To enable the Fill & Sign tools, from the hamburger menu (File menu in macOS) choose Save As Other > Acrobat Reader Extended PDF > Enable More Tools (includes Form Fill-in & Save).",
+      "page_number": 12,
+      "similarity_score": 0.5465
+    },
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "highlighted_text": "Acrobat also allows you to send your completed forms to others and securely save them in Adobe cloud storage. Fill and sign PDF forms To complete and sign PDF forms, open the form in Acrobat and then select E-Sign from the global bar. Alternatively, you can select All tools > Fill & Sign.",
+      "page_number": 2,
+      "similarity_score": 0.5394
+    },
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "highlighted_text": "It could be a paper form or PDF that hasn’t been optimized for form filling. The Fill & Sign tool automatically detects the form fields like text fields, comb fields, checkboxes, and radio buttons. You can manually add text and other symbols anywhere on the form using the Fill & Sign tool if required.",
+      "page_number": 2,
+      "similarity_score": 0.5377
+    }
+  ]
+}

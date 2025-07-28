@@ -124,7 +124,7 @@ def label_by_heuristics(text, size, flags, font_size_distribution):
         return "H2"
     elif re.match(r'^\d+(\.\d+)+\s+', text) and size >= p60:
         return "H3"
-    elif size < p60:
+    elif size <= np.percentile(font_size_distribution, 40):
         return "BODY"
     else:
         return "BODY"
