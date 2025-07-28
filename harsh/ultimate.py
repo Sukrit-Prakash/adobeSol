@@ -1,4 +1,15 @@
 #!/usr/bin/env python3
+
+# 1. Build Docker image
+# bash
+# Copy
+# Edit
+# docker build -t doc_processor .
+# 2. Run container
+# bash
+# Copy
+# Edit
+# docker run --rm -v "$PWD:/app" doc_processor
 """
 Ultimate Final Adobe Hackathon PDF Heading Extraction
 Most Accurate XGBoost Model with Perfected Training and Ensemble

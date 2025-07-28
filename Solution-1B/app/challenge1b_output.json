@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "persona": "HR professional",
+    "task": "Create and manage fillable forms for onboarding and compliance.",
+    "processed_documents": [
+      "Learn Acrobat - Create and Convert_1.pdf",
+      "Learn Acrobat - Create and Convert_2.pdf",
+      "Learn Acrobat - Edit_1.pdf",
+      "Learn Acrobat - Edit_2.pdf",
+      "Learn Acrobat - Export_1.pdf",
+      "Learn Acrobat - Export_2.pdf",
+      "Learn Acrobat - Fill and Sign.pdf",
+      "Learn Acrobat - Generative AI_1.pdf",
+      "Learn Acrobat - Generative AI_2.pdf",
+      "Learn Acrobat - Request e-signatures_1.pdf",
+      "Learn Acrobat - Request e-signatures_2.pdf",
+      "Learn Acrobat - Share_1.pdf",
+      "Learn Acrobat - Share_2.pdf",
+      "Test Your Acrobat Exporting Skills.pdf",
+      "The Ultimate PDF Sharing Checklist.pdf"
+    ],
+    "timestamp": "2025-07-28T22:29:47.615168"
+  },
+  "results": [
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "page_number": 2,
+      "refined_text": "Alternatively, you can select All tools > Fill & Sign. It displays the Fill & Sign tools in the left pane. You can now fill in the form fields and sign the form using the sign tools described in the following topics.",
+      "section_title": "Alternatively, you can select All tools > Fill & Sign. It displays the Fill & Si",
+      "score": 0.524357795715332,
+      "highlighted_text": "Alternatively, you can select All tools > **Fill** & **Sign**. It displays the **Fill** & **Sign** tools in the left pane. You can now **fill** in the **form** fields and **sign** the **form** using the **sign** tools described in the following topics.",
+      "confidence": "low"
+    },
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "page_number": 2,
+      "refined_text": "You can manually add text and other symbols anywhere on the form using the Fill & Sign tool if required. You can complete the forms by entering information and adding your signatures. Acrobat also allows you to send your completed forms to others and securely save them in Adobe cloud storage.",
+      "section_title": "You can manually add text and other symbols anywhere on the form using the Fill ",
+      "score": 0.5072437524795532,
+      "highlighted_text": "You can manually add text and other symbols anywhere on the **form** using the **Fill** & **Sign** tool if required. You can complete the forms by entering information and adding your signatures. **Acrobat** also allows you to send your completed forms to others and securely save them in Adobe cloud storage.",
+      "confidence": "low"
+    },
+    {
+      "document": "Learn Acrobat - Request e-signatures_1.pdf",
+      "page_number": 5,
+      "refined_text": "That means those fields will be available to the signer for filling the information and signing the form.",
+      "section_title": "That means those fields will be available to the signer for filling the informat",
+      "score": 0.4989786744117737,
+      "highlighted_text": "That means those fields will be available to the signer for filling the information and signing the **form**.",
+      "confidence": "low"
+    },
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "page_number": 12,
+      "refined_text": "Interactive form To create an interactive form, use the Prepare Forms tool. See Create a form from an existing document. Flat form To enable the Fill & Sign tools, from the hamburger menu (File menu in macOS) choose Save As Other > Acrobat Reader Extended PDF > Enable More Tools (includes Form Fill-in & Save).",
+      "section_title": "Interactive form To create an interactive form, use the Prepare Forms tool. See ",
+      "score": 0.48232412338256836,
+      "highlighted_text": "Interactive **form** To create an interactive **form**, use the Prepare Forms tool. See Create a **form** from an existing document. Flat **form** To enable the **Fill** & **Sign** tools, from the hamburger menu (File menu in macOS) choose Save As Other > **Acrobat** Reader Extended PDF > Enable More Tools (includes **Form** **Fill**-in & Save).",
+      "confidence": "low"
+    },
+    {
+      "document": "Learn Acrobat - Fill and Sign.pdf",
+      "page_number": 10,
+      "refined_text": "Auto-Complete forms (interactive forms only) The Auto-Complete feature stores any entries that you type in an interactive form field. Auto- Complete then suggests or even automatically enters responses that match your typing in other form fields. The suggestions appear in a pop-up menu, from which you can select a match.",
+      "section_title": "Auto-Complete forms (interactive forms only) The Auto-Complete feature stores an",
+      "score": 0.46061971783638,
+      "highlighted_text": "Auto-Complete forms (interactive forms only) The Auto-Complete feature stores any entries that you type in an interactive **form** field. Auto- Complete then suggests or even automatically enters responses that match your typing in other **form** fields. The suggestions appear in a pop-up menu, from which you can select a match.",
+      "confidence": "low"
+    }
+  ]
+}
