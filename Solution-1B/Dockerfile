@@ -2,19 +2,16 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-# Only copy requirements to take advantage of Docker cache
 COPY requirements.txt .
 
-# Install dependencies
-RUN pip install "numpy<2.0"
+# Install NumPy 1.x first to ensure compatibility
 RUN pip install --upgrade pip && \
+    pip install "numpy<2.0" && \
     pip install -r requirements.txt
 
-# Now copy the rest of the code
 COPY . .
 
-# Download NLTK data
-RUN python -m nltk.downloader punkt
+RUN python -m nltk.downloader punkt punkt_tab
 
-# Set default entrypoint
-CMD ["python", "app/main.py", "--config", "input.json"]
+# Set environment variable to ensure NumPy compatibility
+ENV NUMPY_EXPERIMENTAL_DTYPE_API=1
