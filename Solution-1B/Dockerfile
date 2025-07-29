@@ -1,23 +1,20 @@
-# Dockerfile
-FROM python:3.12.10-slim
+FROM python:3.12-slim
 
 WORKDIR /app
 
-COPY requirements.txt ./
-RUN pip install --no-cache-dir numpy nltk
+# Only copy requirements to take advantage of Docker cache
+COPY requirements.txt .
 
-# Download punkt using script
-COPY setup_nltk.py .
-RUN python setup_nltk.py
+# Install dependencies
+RUN pip install "numpy<2.0"
+RUN pip install --upgrade pip && \
+    pip install -r requirements.txt
 
-# Set NLTK environment
-ENV NLTK_DATA=/root/nltk_data
-
-# Install torch and remaining dependencies
-RUN pip install --no-cache-dir torch==2.1.2+cpu torchvision==0.16.2+cpu torchaudio==2.1.2+cpu \
-    -f https://download.pytorch.org/whl/torch_stable.html && \
-    pip install --no-cache-dir -r requirements.txt
-
+# Now copy the rest of the code
 COPY . .
 
-CMD ["python", "app/main.py"]
+# Download NLTK data
+RUN python -m nltk.downloader punkt
+
+# Set default entrypoint
+CMD ["python", "app/main.py", "--config", "input.json"]
